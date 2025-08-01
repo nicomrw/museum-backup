@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weltraumausstellung</title>
+    <link rel="icon" type="image/png" href="images/rakete.png" sizes="16x16">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    </style>
+</head>
+
+<body background="images/Hintergrund.jpg">
+
+    <!-- Menüleiste -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="informationen.html">Informationen</a>
+            <a class="start" href="quizISS.html">Quiz</a>
+
+            <!-- Muss noch richtig verkinkt werden -->
+            <!--       <a class="
+         active"
+         href="AuswahlQuiz.html">Fragen</a> -->
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var restartButton = document.querySelector(".restart");
+
+            restartButton.addEventListener("click", function () {
+                location.reload(); // Diese Zeile löst das Neuladen der Seite aus
+            });
+        });
+    </script>
+
+
+<br>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div style="position: fixed; top:4% ;right: 5%;">
+
+        <span style="font-size:30px;cursor:pointer; right: auto; color: #C0C0C0; z-index: 0;" onclick="openNav()">&#128640; </span>
+    
+      </div>
+      <div class="container-fluid">
+        <div class="topnav">
+          <a>
+            <h1 style="text-align: center;">Weltraumausstellung im Stadtmuseum Künzelsau</h1>
+          </a>
+
+          <a href="index.html"><img src="images/Künzelsau-Freiraum.png"><img src="images/DE-Wuerth_IT-removebg-preview.png"></a>
+        </div>
+      </div>
+    </nav>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Informationen ISS</h1>
+
+            <p>Hier findest du Informationen über die ISS</p>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <br>
+            <p>
+
+                <a href="informationen.html"><button class="btn btn-primary btn-lg btn-block">Zurück </button></a>
+                <!--      <button class="start btn btn-primary btn-lg" role="button">Alexander Gerst</button> -->
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+            </p>
+            <br>
+            <!--       <button class="start btn btn-primary btn-lg" role="button">Informationen</button>   -->
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>ISS</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <p>Die Internationale Raumstation ist das größte Objekt, das je in den Weltraum befördert wurde. Nachts kann
+                man sie problemlos von der Erde aus sehen, während sie in 400 Kilometern Höhe über unsere Köpfe fliegt.
+                Am Bau der Raumstation haben viele Länder zusammengearbeitet. Die USA, Russland, Japan, Kanada und
+                Europa haben dafür das größte Team in der Geschichte der Wissenschaft gebildet. Europas größtes
+                ISS-Projekt ist das Forschungslabor Columbus, mit dem Wissenschaftler Versuche unter Bedingungen der
+                Schwerelosigkeit ausführen lassen können. Eine Vielzahl unterschiedlicher Experimente kann innerhalb
+                und außerhalb dieses Weltraumlabors vorgenommen werden.
+            
+                Von europäischer Seite sorgten fünf Flüge des Raumtransporters ATV von 2008 bis 2014 für den Nachschub mit Astronautenbedarf, 
+                Experimenten, Ersatzteilen und Treibstoff. Die Versorgung der ISS auf westlicher Seite wird heute weitgehend von kommerziellen 
+                Firmen wie SpaceX und Orbital durchgeführt. Die Dragon-Kapsel des Unternehmens SpaceX transportiert seit 2020 auch die Besatzungen 
+                zur ISS und zurück. Auf russischer Seite fliegen nach wie vor der Progress Frachter sowie Sojus für den Crew-Transport.
+                Bislang sind etwa 4.000 Experimente auf der ISS durchgeführt worden.
+            </p>
+            <br>
+            <h2>Bahnhöhe</h2>
+            <p>400 km</p>
+            <h2>Gestartet</h2>
+            <p>20. Nov 1998</p>
+          <!--  <h2>Dorthin gesendete Mission</h2>
+            <p>Sojus TMA-13M, ISS-Expedition 44, ISS-Expedition 45</p>-->
+            <h2>Aufenthalte von Alexander Gerst in der ISS:</h2>
+            <p>Expedition 40/41 Blue Dot, 28. Mai bis 9. November 2014<br>
+               Expedition 56/57 Horizons, 6. Juni bis 20. Dezember 2018</p>
+            <h2>Geplante Laufzeit der ISS</h2>
+            <p>bis mindestens 2030</p>
+            <h2>Umlaufgeschwindigkeit</h2>
+            <p>7,71 km/s</p>
+            <br>
+            <a href="https://www.dlr.de/de/forschung-und-transfer/projekte-und-missionen/iss"><button
+                    class="btn btn-primary btn-lg btn-block">Weitere Informationen</button></a>
+            <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Bild der ISS</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <center>
+                <img src="images/Bild-ISS.jpeg" alt="Internationale Raumstation" style="width:100%;max-width:90%">
+
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.dlr.de/de/forschung-und-transfer/projekte-und-missionen/iss">
+                        <button class="btn btn-primary btn-lg btn-block" style="width: 90%">Quelle</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+            </center>
+
+
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Aufbau der ISS</h1>
+            <br>
+            <center>
+                <img src="images/aufbau-der-iss-in-20-jahren.jpg" alt="Internationale Raumstation"
+                    style="width:100%;max-width:90%">
+
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.dlr.de/de/bilder/2020/04/aufbau-der-iss-in-20-jahren">
+                        <button class="btn btn-primary btn-lg btn-block" style="width: 90%">Quelle</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+            </center>
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Wie schläft man in der Schwerelosigkeit?</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            
+            <center>
+                <figure>
+                <img src="images/18.03/SchlafsackFotoElkeSturmStadtKÜN (30)auss.jpg" alt="Schlafsack"
+                style="width:100%;max-width:90%">
+                <figcaption>Dieser Schlafsack wurde von einer Schülerin des Ganerben-Gymnasiums nach einem Foto eines Schlafsackes von Dr. Alexander Gerst genäht</figcaption>
+                </figure>
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>Dr. Alexander Gerst auf die Frage, wie man auf der ISS in der Schwerelosigkeit schläft: „Man hat einen Schlafsack, 
+                    in dem man sich festschnallen kann, damit man nicht mit dem Kopf in der Ecke aufwacht. Man würde sonst tatsächlich einfach so herumschweben.“  
+                    </p>
+                    <p>
+                        <a href="https://www.swr.de/wissen/article-swr-20122.html"> <button
+                            class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                    </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+            </center>
+        </div>
+
+
+
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Souvenirs der Missionen</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <p>Ausstellungsinfos QR</p>
+            <p>
+              <a href="IssSouvenir.html"><button class="btn btn-primary btn-lg btn-block">Hier mehr </button></a>
+              <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+              <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+            </p>
+            <br>
+            <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+          </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/quiz.js"></script>
+        <script src="js/script.js"></script>
+
+</body>
+
+</html>

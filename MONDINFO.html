@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weltraumausstellung</title>
+    <link rel="icon" type="image/png" href="images/rakete.png" sizes="16x16">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    </style>
+</head>
+
+<body background="images/Hintergrund.jpg">
+
+    <!-- Menüleiste -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="informationen.html">Informationen</a>
+            <a class="start" href="quizMond.html">Quiz</a>
+
+            <!-- Muss noch richtig verkinkt werden -->
+            <!--       <a class="
+         active"
+         href="AuswahlQuiz.html">Fragen</a> -->
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var restartButton = document.querySelector(".restart");
+
+            restartButton.addEventListener("click", function () {
+                location.reload(); // Diese Zeile löst das Neuladen der Seite aus
+            });
+        });
+    </script>
+
+
+<br>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div style="position: fixed; top:4% ;right: 5%;">
+
+        <span style="font-size:30px;cursor:pointer; right: auto; color: #C0C0C0; z-index: 0;" onclick="openNav()">&#128640; </span>
+    
+      </div>
+      <div class="container-fluid">
+        <div class="topnav">
+          <a>
+            <h1 style="text-align: center;">Weltraumausstellung im Stadtmuseum Künzelsau</h1>
+          </a>
+
+          <a href="index.html"><img src="images/Künzelsau-Freiraum.png"><img src="images/DE-Wuerth_IT-removebg-preview.png"></a>
+        </div>
+      </div>
+    </nav>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Informationen Mond</h1>
+
+            <p>Hier findest du Informationen über den Mond</p>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <br>
+            <p>
+
+                <a href="informationen.html"><button class="btn btn-primary btn-lg btn-block">Zurück </button></a>
+                <!--      <button class="start btn btn-primary btn-lg" role="button">Alexander Gerst</button> -->
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+            </p>
+            <br>
+            <!--       <button class="start btn btn-primary btn-lg" role="button">Informationen</button>   -->
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Der Mond</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <p>Monde sind natürliche Objekte, die Planeten umkreisen. Wissenschaftler bezeichnen sie normalerweise als
+                Planetensatelliten. Vom Menschen geschaffene Satelliten werden manchmal auch künstliche Monde genannt.
+                In unserem Sonnensystem gibt es rund 170 Monde. Die meisten befinden sich in einer Umlaufbahn um die
+                Gasriesen Jupiter und Saturn. Kleine Planeten haben in der Regel wenige Monde: Mars besitzt zwei, die
+                Erde einen und Venus und Merkur haben gar keinen. <br> <br> Der Mond unserer Erde ist im Vergleich zum
+                Planeten ungewöhnlich groß. Die meisten Monde sehen neben ihren Planeten wie Zwerge aus. Einige der
+                Monde von Jupiter und Saturn sind jedoch wesentlich größer als unser Mond. Ganymed und Titan sind größer
+                als der Planet Merkur.</p>
+            <br>
+            <h2>Umlaufbahnen</h2>
+            <p>Erde</p>
+            <h2>Umlaufzeit</h2>
+            <p>27 Tage</p>
+            <h2>Umlaufentfernung</h2>
+            <p>384.400 km</p>
+            <h2>Radius</h2>
+            <p>1.737,40 km</p>
+            <h2>Schwerkraft</h2>
+            <p>1,62 m/s²</p>
+            <h2>Kosmologische Entfernung</h2>
+            <p>384.399,90 km</p>
+            <br>
+            <a href="https://www.esa.int/kids/de/lernen/Unser_Universum/Planeten_und_Monde/Monde"><button
+                    class="btn btn-primary btn-lg btn-block">Vollständiger Beitrag</button></a>
+            <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Bild vom Mond bei null Grad Phasenwinkel</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <center>
+                <img src="images/Bild-Mond-neu.jpeg" alt="Mond" style="width:100%;max-width:90%">
+
+
+
+
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.dlr.de/de/bilder/2019/4/mond-bei-0-grad-phasenwinkel">
+                        <button class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+
+            </center>
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1>Mond zwischen Planeten</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+            <center>
+                <img src="images/Mond_und_Mars_pillars.jpg" alt="Mond" style="width:100%;max-width:90%">
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2016/11/Mond_und_Mars">
+                        <button class="btn btn-primary btn-lg btn-block" style="width: 90%">Quelle</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+            </center>
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> Südpol des Mondes</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+
+                <img src="images/South_pole_of_the_Moon_pillars.jpg" alt="Mond" style="width:100%;max-width: 90%;">
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2023/01/South_pole_of_the_Moon"><button
+                        class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> Argonaut auf dem Mond</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+            <figure>
+                <img src="images/Moon_surface_scenario_pillars.jpg" alt="Mond" style="width:100%;max-width: 90%;">
+                <figcaption>Argonaut ist ein europäischer Mondlander, der Europa einen autonomen Zugang zum Mond ermöglicht 
+                    und es uns ermöglichen wird, eine wichtige <br> Rolle auf der Oberfläche unseres natürlichen Satelliten zu spielen.</figcaption>
+            </figure>
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2022/07/Moon_surface_scenario"> <button
+                        class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> European Service Module fliegt am Mond vorbei </h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+
+                <img src="images/European_Service_Module_flies_by_the_Moon_pillars.jpg" alt="Mond"
+                    style="width:100%;max-width: 90%;">
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a
+                        href="https://www.esa.int/ESA_Multimedia/Images/2022/12/European_Service_Module_flies_by_the_Moon">
+                        <button class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr
+                            dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+
+        <div id="start_screen" class="jumbotron">
+            <h1> Tor über dem Mond</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+
+                <img src="images/Gateway_over_Moon_pillars.png" alt="Mond" style="width:100%;max-width: 90%;">
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2022/09/Gateway_over_Moon"> <button
+                        class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> Wie das Navi funktioniert</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+
+                <img src="images/How_satnav_works_pillars.jpg" alt="Mond" style="width:100%;max-width: 90%;">
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <br>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2011/08/How_satnav_works"> <button
+                        class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> Video Moonlight initiative</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+
+                <iframe width="1309" height="989" src="https://www.youtube.com/embed/JeJrppAf78E"
+                    title="What is ESA’s Moonlight initiative?" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen alt="Mond" style="width:100%;max-width: 90%"></iframe>
+
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Videos/2022/11/What_is_ESA_s_Moonlight_initiative">
+                        <button class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr
+                            dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> Andere Seite des Mondes</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+
+                <img src="images/Far_side_of_the_Moon_pillars.jpg" alt="Mond" style="width:100%;max-width: 90%;">
+
+
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2022/11/Far_side_of_the_Moon"> <button
+                        class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+        <div id="start_screen" class="jumbotron">
+            <h1> Präzises Timing für die Navigation</h1>
+            <br>
+            <!--     <p>Space Exhibition Projekt Würth IT 2023</p> -->
+
+            <center>
+            <figure>
+                <img src="images/Galileo_for_timing_pillars.jpg" alt="Mond" style="width:100%;max-width: 90%;">
+                <figcaption>Galileo ist derzeit das präziseste Satellitennavigationssystem der Welt und bedient mehr als drei Milliarden Nutzer auf der ganzen Welt. </figcaption>
+            </figure>
+
+
+                <!--    <button class="start btn btn-primary btn-lg" role="button">ISS</button> -->
+                <!--     <button class="start btn btn-primary btn-lg" role="button">Raketen</button> -->
+                </p>
+                <p>
+                    <a href="https://www.esa.int/ESA_Multimedia/Images/2013/04/Galileo_for_timing"> <button
+                        class="btn btn-primary btn-lg btn-block" style="width: 90%">Hier mehr dazu</button></a>
+                </p>
+                <!--   <button class="start btn btn-primary btn-lg" role="button">Informationen</button>    -->
+
+            </center>
+
+        </div>
+
+
+        <div id="question" class="jumbotron" hidden>
+            <h2>Frage <span id="qno"></span></h2>
+            <p id="question_text">...?</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><button id="answer_a_btn" class="answer btn btn-default btn-lg btn-block" role="button">A: <span
+                                id="answer_a">!</span></button></p>
+                </div>
+                <div class="col-md-6">
+                    <p><button id="answer_c_btn" class="answer btn btn-default btn-lg btn-block" role="button">C: <span
+                                id="answer_c">.</span></button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><button id="answer_b_btn" class="answer btn btn-default btn-lg btn-block" role="button">B: <span
+                                id="answer_b">?</span></button></p>
+                </div>
+                <div class="col-md-6">
+                    <p><button id="answer_d_btn" class="answer btn btn-default btn-lg btn-block" role="button">D: <span
+                                id="answer_d">;</span></button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10"></div>
+                <div class="col-md-2">
+                    <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-block" role="button"><span
+                                id="commit_text">Antworten</span></button></p>
+                    <p><button id="continue_btn" class="btn btn-primary btn-lg btn-block" role="button" hidden><span
+                                id="commit_text">Weiter</span></button></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="over" class="jumbotron quiz_end" hidden>
+            <h1>Quiz Vorbei!</h1>
+            <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
+            <p><button class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

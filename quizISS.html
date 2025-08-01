@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weltraumausstellung</title>
+    <link rel="icon" type="image/png" href="images/rakete.png" sizes="16x16">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    </style>
+
+    <script class="start">
+    </script>
+</head>
+
+<body background="images/Hintergrund.jpg" onload="startQuizISS();">
+
+
+    <!-- Menüleiste -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="ISSINFO.html">Informationen ISS</a>
+            <a class="start" href="quizISS.html">Quiz</a>
+
+            <!-- Muss noch richtig verkinkt werden -->
+            <!--       <a class="
+         active"
+         href="AuswahlQuiz.html">Fragen</a> -->
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var restartButton = document.querySelector(".restart");
+
+            restartButton.addEventListener("click", function () {
+                location.reload(); // Diese Zeile löst das Neuladen der Seite aus
+            });
+        });
+    </script>
+
+
+<br>
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div style="position: fixed; top:4% ;right: 5%;">
+      
+              <span style="font-size:30px;cursor:pointer; right: auto; color: #C0C0C0; z-index: 0;" onclick="openNav()">&#128640; </span>
+          
+            </div>
+            <div class="container-fluid">
+              <div class="topnav">
+                <a>
+                  <h1 style="text-align: center;">Weltraumausstellung im Stadtmuseum Künzelsau</h1>
+                </a>
+      
+                <a href="index.html"><img src="images/Künzelsau-Freiraum.png"><img src="images/DE-Wuerth_IT-removebg-preview.png"></a>
+                <p class="navbar-text navbar-right" hidden>0 Punkte</p>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+        <div id="question" class="jumbotron">
+            <h2>Frage <span id="qno = 1"></span></h2>
+            <p id="question_text">...?</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><button id="answer_a_btn" class="answer btn btn-default btn-lg btn-block" role="button">A: <span
+                                id="answer_a">!</span></button></p>
+                </div>
+                <div class="col-md-6">
+                    <p><button id="answer_c_btn" class="answer btn btn-default btn-lg btn-block" role="button">C: <span
+                                id="answer_c">.</span></button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><button id="answer_b_btn" class="answer btn btn-default btn-lg btn-block" role="button">B: <span
+                                id="answer_b">?</span></button></p>
+                </div>
+                <div class="col-md-6">
+                    <p><button id="answer_d_btn" class="answer btn btn-default btn-lg btn-block" role="button">D: <span
+                                id="answer_d">;</span></button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10"></div>
+                <div class="col-md-2">
+                    <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-block" role="button"><span
+                                id="commit_text">Antworten</span></button></p>
+                    <p><button id="continue_btn" class="btn btn-primary btn-lg btn-block" role="button" hidden><span
+                                id="commit_text">Weiter</span></button></p>
+                </div>
+                <a href="index.html"><button class="start btn btn-primary btn-lg">Zurück zu Home </button></a>
+            </div>
+        </div>
+
+        <div id="over" class="jumbotron quiz_end" hidden>
+            <h1>Quiz vorbei!</h1>
+            <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
+            <center>
+            <p><button class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
+            <p> <a href="index.html"><button class="start btn btn-primary btn-lg">Zurück zu Home </button></a></p>
+            </center>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/quizISS.js"></script>
+    <script src="js/scriptISS.js"></script>
+
+</body>
+
+</html>
