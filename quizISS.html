@@ -24,7 +24,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
             <a href="index.html">Home</a>
-            <a href="ISSINFO.html">Informationen ISS</a>
+            <a href="informationen.html">Informationen</a>
             <a class="start" href="quizISS.html">Quiz</a>
 
             <!-- Muss noch richtig verkinkt werden -->
@@ -42,35 +42,30 @@
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }
-        document.addEventListener("DOMContentLoaded", function () {
-            var restartButton = document.querySelector(".restart");
-
-            restartButton.addEventListener("click", function () {
-                location.reload(); // Diese Zeile löst das Neuladen der Seite aus
-            });
-        });
     </script>
 
 
-<br>
-        <div class="container">
-          <nav class="navbar navbar-default">
-            <div style="position: fixed; top:4% ;right: 5%;">
-      
-              <span style="font-size:30px;cursor:pointer; right: auto; color: #C0C0C0; z-index: 0;" onclick="openNav()">&#128640; </span>
-          
-            </div>
+    <div style="position: absolute; top:4% ;right: 5%;">
+
+        <span style="font-size:30px;cursor:pointer; right: auto; color: white;" onclick="openNav()">&#9776; Menü</span>
+
+    </div>
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
-              <div class="topnav">
-                <a>
-                  <h1 style="text-align: center;">Weltraumausstellung im Stadtmuseum Künzelsau</h1>
-                </a>
-      
-                <a href="index.html"><img src="images/Künzelsau-Freiraum.png"><img src="images/DE-Wuerth_IT-removebg-preview.png"></a>
-                <p class="navbar-text navbar-right" hidden>0 Punkte</p>
-              </div>
+                <div class="topnav">
+                    <a>
+                        <h1 style="text-align: center;">Weltraumausstellung Künzelsau</h1>
+                    </a>
+
+                    <a href="index.html"><img src="images/DE-Wuerth_IT-removebg-preview.png"><img
+                            src="images/Stadt_Künzelsau_LogoBild9.png"></a>
+                    <p class="navbar-text navbar-right" hidden>0 Punkte</p>
+                </div>
             </div>
-          </nav>
+        </nav>
+
 
 
 
@@ -114,10 +109,8 @@
         <div id="over" class="jumbotron quiz_end" hidden>
             <h1>Quiz vorbei!</h1>
             <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
-            <center>
             <p><button class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
             <p> <a href="index.html"><button class="start btn btn-primary btn-lg">Zurück zu Home </button></a></p>
-            </center>
         </div>
     </div>
 

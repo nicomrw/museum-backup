@@ -42,17 +42,17 @@ var questions = [
     id: "4",
     question: "Wann ist Alexander Gerst geboren?",
     answers: {
-      A: "29. Juli 1984",
-      B: "20. Februar 1983",
-      C: "03. Mai 1976",
-      D: "20. Dezember 1963",
+      A: "29.7.1984",
+      B: "20.2.1983",
+      C: "20.12.1963",
+      D: "03.05.1976",
       
  //     A: "29. Juli 1984",
  //     B: "20. Feburar 1983",
   //    C: "11. Dezember 1963",
    //   D: "03. Mai 1976",
     },
-    right: "C",
+    right: "D",
   },
   {
     id: "5",
@@ -60,8 +60,8 @@ var questions = [
     answers: {
       A: "42 Jahre",
       B: "53 Jahre",
-      C: "38 Jahre",
-      D: "47 Jahre",
+      C: "47 Jahre",
+      D: "38 Jahre",
     },
     right: "C",
   },

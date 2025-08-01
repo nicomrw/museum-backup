@@ -71,20 +71,20 @@ var questionsISS = [
     },
     right: "C",
   },
- // {
- //   id: "7",
- //   question:
- //     "Wie ist das Verhältnis von Sauerstoff und Stickstoff auf der ISS?",
- //   answers: {
- //     A: "21% Sauerstoff, 78% Stickstoff, 1% sonstige Gase",
- //     B: "48% Sauerstoff, 49% Stickstoff, 3% sonstige Gase",
- //     C: "64% Sauerstoff, 32% Stickstoff, 4% sonstige Gase",
- //     D: "84% Sauerstoff, 16% Stickstoff, 0% sonstige Gase",
- //   },
- //   right: "A",
- // },
   {
     id: "7",
+    question:
+      "Wie ist das Verhältnis von Sauerstoff und Stickstoff auf der ISS?",
+    answers: {
+      A: "21% Sauerstoff, 78% Stickstoff, 1% sonstige Gase",
+      B: "48% Sauerstoff, 49% Stickstoff, 3% sonstige Gase",
+      C: "64% Sauerstoff, 32% Stickstoff, 4% sonstige Gase",
+      D: "84% Sauerstoff, 16% Stickstoff, 0% sonstige Gase",
+    },
+    right: "A",
+  },
+  {
+    id: "8",
     question: "Wie viele Quadratmeter haben die Solarzellen der ISS?",
     answers: {
       A: "1.500 m2",
@@ -95,7 +95,7 @@ var questionsISS = [
     right: "C",
   },
   {
-    id: "8",
+    id: "9",
     question:
       "Welches der folgenden Länder ist nicht am Betrieb der ISS beteiligt?",
     answers: {
@@ -107,7 +107,7 @@ var questionsISS = [
     right: "B",
   },
   {
-    id: "9",
+    id: "10",
     question: "Wie hieß die erste Raumstation im Weltall?",
     answers: {
       A: "Saljut 1",
