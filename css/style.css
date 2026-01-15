@@ -191,10 +191,7 @@ testleft {
   text-align: center;
 }
 
-.topnav {
-}
-
-
+.topnav {}
 
 .topnav a {
   float: left;
@@ -210,11 +207,6 @@ testleft {
   border: 1px;
   height: 80px;
   width: 250px;
-}
-
-#kün {
-  border: 1px;
-  height: 50px;
 }
 
 @media screen and (max-width: 600px) {
